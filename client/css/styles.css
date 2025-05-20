@@ -1,0 +1,174 @@
+/* 背景样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    background-image: url('image.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* 容器样式 */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* 搜索框样式 */
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    width: 50%;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgba(255,255,255,0.9);
+    color: #333;
+}
+
+/* 表格样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+th {
+    background-color: rgba(52, 152, 219, 0.7);
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+tr:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* 角色图片样式 */
+.character-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    /* border-radius: 50%; */
+    border: 2px solid #01aaff;
+}
+
+/* 评级颜色样式 */
+.ss-plus { background-color: #ff4500; color: white; font-weight: bold; }
+.ss { background-color: #ff8c00; color: white; }
+.s-plus { background-color: #ffa500; color: #333; }
+.s { background-color: #ffd700; color: #333; }
+.a-plus { background-color: #32cd32; color: white; }
+.a { background-color: #228b22; color: white; }
+.b-plus { background-color: #4169e1; color: white; }
+.b { background-color: #1e90ff; color: white; }
+.c { background-color: #9370db; color: white; }
+.d { background-color: #a9a9a9; color: white; }
+
+/* 分页样式 */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.pagination-btn {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: rgba(255,255,255,0.8);
+    color: #3498db;
+    cursor: pointer;
+    border-radius: 4px;
+    min-width: 32px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background-color: rgba(255,255,255,0.9);
+    transform: translateY(-2px);
+}
+
+.pagination-btn:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.pagination-btn.active {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+.pagination-ellipsis {
+    padding: 5px 10px;
+    color: rgba(255,255,255,0.7);
+}
+
+.page-jump-container {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    gap: 5px;
+    color: rgba(255,255,255,0.8);
+}
+
+.page-jump-input {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.9);
+    color: #333;
+}
+
+.page-jump-btn {
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.page-jump-btn:hover {
+    background-color: #2980b9;
+}

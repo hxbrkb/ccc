@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>角色评级展示系统</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>角色评级展示系统</h1>
+        
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="搜索角色名称...">
+            </div>
+        </div>
+        
+        <table id="roleTable">
+            <thead>
+                <tr>
+                    <th>角色</th>
+                    <th>图片</th>
+                    <th>深渊</th>
+                    <th>PVP</th>
+                    <th>高压副本</th>
+                    <th>复活单桩</th>
+                    <th>复活群桩</th>
+                    <th>体力活动打榜</th>
+                </tr>
+            </thead>
+            <tbody id="roleTableBody">
+                <!-- 数据将通过JavaScript动态填充 -->
+            </tbody>
+        </table>
+        
+        <!-- 分页容器 -->
+        <div class="pagination-container" id="paginationContainer"></div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
